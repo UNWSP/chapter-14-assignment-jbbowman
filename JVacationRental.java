@@ -25,6 +25,7 @@ class JVacationRental extends JFrame implements ActionListener {
         super("Lambert's Vacation Rental Calculator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        
 
         locationPanel.add(locationLbl);
         JRadioButton[] locationBtns = {parksideBtn, poolsideBtn, lakesideBtn};
@@ -65,6 +66,7 @@ class JVacationRental extends JFrame implements ActionListener {
         frame.setVisible(true);
     }
 
+    // calculate button
     public void actionPerformed(ActionEvent e) {
         Object source = e.getSource();
         if(source == calcBtn) {
@@ -73,6 +75,7 @@ class JVacationRental extends JFrame implements ActionListener {
         }
     }
 
+    // location radiobuttons
     private class LocationsListener implements ItemListener {
         public void itemStateChanged(ItemEvent e) {
             Object source = e.getItem();
@@ -83,6 +86,7 @@ class JVacationRental extends JFrame implements ActionListener {
         }
     }
 
+    // bedroom radiobuttons
     private class BedroomsListener implements ItemListener {
         public void itemStateChanged(ItemEvent e) {
             Object source = e.getItem();
@@ -92,6 +96,7 @@ class JVacationRental extends JFrame implements ActionListener {
         }
     }
 
+    // meal radiobuttons
     private class MealsListener implements ItemListener {
         public void itemStateChanged(ItemEvent e) {
             Object source = e.getItem();
