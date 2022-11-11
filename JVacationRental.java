@@ -25,8 +25,6 @@ class JVacationRental extends JFrame implements ActionListener {
         super("Lambert's Vacation Rental Calculator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        
-
         locationPanel.add(locationLbl);
         JRadioButton[] locationBtns = {parksideBtn, poolsideBtn, lakesideBtn};
         for (JRadioButton locationBtn : locationBtns) {
